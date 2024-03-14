@@ -29,7 +29,9 @@ void reverseArray(int arr[], int size) {
   for (int i = size - 1; i < 0; i--){
     invertido[x] = i;
     x++;
+    arr[x] = invertido[x];
   }
+  
 }
 
 /*
