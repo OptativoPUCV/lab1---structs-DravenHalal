@@ -185,3 +185,14 @@ Thu 14 Mar 2024 03:13:32 PM UTC:
  tests:  0|6
 total_score: 10/70
 bc0b7ba
+Thu 14 Mar 2024 03:14:17 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:32:23: error: ‘*invertido[1]’ may be used uninitialized [-Werror=maybe-uninitialized]
+   32 |     arr[x] = invertido[x];
+      |              ~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+2a78bc0
