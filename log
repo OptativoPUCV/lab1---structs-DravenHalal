@@ -27,3 +27,23 @@ exercises.c:61:1: error: expected expression before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 e2c59d0
+Thu 14 Mar 2024 02:56:58 PM UTC: 
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:27:7: error: variable ‘invertido’ set but not used [-Werror=unused-but-set-variable]
+   27 |   int invertido[size];
+      |       ^~~~~~~~~
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:44:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   44 |     if(arr[i] % 2 == 0)
+      |     ^~
+exercises.c:46:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   46 |       newSize++;
+      |       ^~~~~~~
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:61:1: error: expected expression before ‘}’ token
+   61 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+248accb
