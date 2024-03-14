@@ -306,3 +306,14 @@ Thu 14 Mar 2024 08:00:18 PM UTC:
  tests:  0|4
 total_score: 30/70
 ae4baa9
+Thu 14 Mar 2024 08:01:17 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:48:7: error: value computed is not used [-Werror=unused-value]
+   48 |       *newSize++;
+      |       ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0b236a3
