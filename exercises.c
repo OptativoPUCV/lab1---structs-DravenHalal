@@ -44,8 +44,8 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   
   for (int i = 0; i < size; i++) {
     if (arr[i] % 2 == 0) {
-      paresArr[i] = arr[i];
-      newSize++;
+      paresArr[*newSize] = arr[i];
+      (*newSize)++;
     }
   }
   return paresArr;
