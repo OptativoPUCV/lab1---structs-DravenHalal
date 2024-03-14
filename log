@@ -131,3 +131,13 @@ exercises.c:64:1: error: expected expression before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 32c9f54
+Thu 14 Mar 2024 03:05:11 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:65:1: error: expected expression before ‘}’ token
+   65 | }
+      | ^
+Compilation failed
+2c8e7f4
