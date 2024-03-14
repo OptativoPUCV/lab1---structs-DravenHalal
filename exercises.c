@@ -28,7 +28,7 @@ void reverseArray(int arr[], int size) {
   int x = 0;
   for (int i = size - 1; i != 0; i--) {
     invertido[x] = arr[i];
-    printf(arr[i]);
+    printf("%d"arr[i]);
     x++;
   }
   arr[size] = invertido[size];
