@@ -113,3 +113,21 @@ exercises.c:64:1: error: expected expression before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 a834ff4
+Thu 14 Mar 2024 03:04:55 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:46:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   46 |     if(arr[i] % 2 == 0)
+      |     ^~
+exercises.c:48:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   48 |       newSize++;
+      |       ^~~~~~~
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:64:1: error: expected expression before ‘}’ token
+   64 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+32c9f54
