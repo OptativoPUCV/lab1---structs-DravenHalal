@@ -265,3 +265,14 @@ exercises.c:31:12: error: too many arguments for format [-Werror=format-extra-ar
 cc1: all warnings being treated as errors
 Compilation failed
 87f1907
+Thu 14 Mar 2024 03:20:34 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:31:12: error: too many arguments for format [-Werror=format-extra-args]
+   31 |     printf("d ", arr[i]);
+      |            ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+76d5343
