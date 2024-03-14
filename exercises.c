@@ -26,7 +26,7 @@ invierta el orden de sus elementos.
 void reverseArray(int arr[], int size) {
   int invertido[size];
   int x = 0;
-  for (int i = size - 1; i < 0; i--){
+  for (int i = size - 1; i < 0; i--) {
     invertido[x] = i;
     x++;
     arr[x] = invertido[x];
@@ -39,16 +39,16 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { 
+int *filterEvenNumbers(int arr[], int size, int *newSize) {
   *newSize = 0;
   int *paresArr = (int *)malloc(size * sizeof(int));
-  for(int i = 0; i < size; i++){
-    if(arr[i] % 2 == 0){
+  for (int i = 0; i < size; i++) {
+    if (arr[i] % 2 == 0) {
       paresArr[i] = arr[i];
       newSize++;
     }
   }
-  return paresArr; 
+  return paresArr;
 }
 
 /*
@@ -57,11 +57,11 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]){
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
+                       int result[]) {
   int sumSize = size2 + size1;
-    for(int i = 0; i < sumSize; i++){
-      
-    }
+  for (int i = 0; i < sumSize; i++) {
+  }
 }
 
 /*
