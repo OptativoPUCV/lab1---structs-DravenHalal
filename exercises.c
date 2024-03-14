@@ -28,8 +28,8 @@ void reverseArray(int arr[], int size) {
   int x = 0;
   for (int i = size - 1; i == 0; i--) {
     invertido[x] = arr[i];
-    x++;
     arr[x] = invertido[x];
+    x++;
   }
 }
 

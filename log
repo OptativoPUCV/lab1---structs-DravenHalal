@@ -196,3 +196,9 @@ exercises.c:32:23: error: ‘*invertido[1]’ may be used uninitialized [-Werror
 cc1: all warnings being treated as errors
 Compilation failed
 2a78bc0
+Thu 14 Mar 2024 03:14:45 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 10/70
+3acfc93
