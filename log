@@ -527,3 +527,17 @@ exercises.c:83:17: error: expected expression before ‘)’ token
       |                 ^
 Compilation failed
 68d2be2
+Sat 16 Mar 2024 04:14:25 AM UTC: 
+ exercises.c | 15 ++++++++++++---
+ 1 file changed, 12 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:84:15: error: unused variable ‘x’ [-Werror=unused-variable]
+   84 |       for(int x = 0; i < size - 1; i++){
+      |               ^
+exercises.c:96:1: error: control reaches end of non-void function [-Werror=return-type]
+   96 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+0ca46de

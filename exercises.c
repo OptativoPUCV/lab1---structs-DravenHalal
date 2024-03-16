@@ -80,10 +80,19 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size){
   for(int i = 0; i < size - 1; i++){
-    if(arr[i] > )
+    if(arr[i] > arr[i+1]){
+      for(int x = 0; i < size - 1; i++){
+        if(arr[i] < arr[i+1]) return 0;
+        else return -1;
+      }
+    }
+    else if(arr[i] < arr[i+1]){
+      for(int x = 0; x < size - 1; x++){
+        if(arr[i] > arr[i+1]) return 0;
+        else return 1;
+      }
+    }
   }
-  if(arr[size] > arr[0]) return 1;
-  else return -1; 
 }
 
 /*
