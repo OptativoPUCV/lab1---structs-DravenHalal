@@ -83,7 +83,8 @@ int checkSorted(int arr[], int size){
     if(arr[i] > arr[i+1]){
       for(int x = 0; x < size - 1; x++){
         if(arr[i] < arr[i+1]) return 0;
-        else return -1;
+        else 
+          return -1;
       }
     }
     else if(arr[i] < arr[i+1]){
