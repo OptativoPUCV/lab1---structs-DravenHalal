@@ -726,3 +726,21 @@ exercises.c:96:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 1fb9970
+Sat 16 Mar 2024 05:25:55 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:119:33: error: invalid type argument of unary ‘*’ (have ‘int’)
+  119 |   libro->autor.anioNacimiento = *anioNacimiento;
+      |                                 ^~~~~~~~~~~~~~~
+exercises.c:120:28: error: invalid type argument of unary ‘*’ (have ‘int’)
+  120 |   libro->anioPublicacion = *anioPublicacion;
+      |                            ^~~~~~~~~~~~~~~~
+exercises.c: In function ‘checkSorted’:
+exercises.c:96:1: error: control reaches end of non-void function [-Werror=return-type]
+   96 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+5c7fdb3
