@@ -65,6 +65,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
     int sumSize = size1 + size2;
     for (int i = 0; i < sumSize; i++) {
       printf("%d ",size1);
+      printf("%d ",size2);
         if (y < size1 && (x >= size2 || arr1[y] <= arr2[x])) {;
             result[i] = arr1[y++];
         } 
