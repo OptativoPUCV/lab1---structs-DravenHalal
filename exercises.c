@@ -36,6 +36,8 @@ Ejercicio 3: Filtrar Números Pares
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
+newsize apunta a una direccion valida que no ha sido inicializada con ningun valor especifico.
+*newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) {
   *newSize = 0;
@@ -54,13 +56,22 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
 Descripción: Escribe una función que tome dos arreglos
-ordenados y sus tamaños, y luego fusione estos dos
-arreglos en un tercer arreglo también ordenado.
+ordenados de menor a mayor y sus tamaños, y luego fusione estos dos arreglos
+en un tercer arreglo también ordenado de menor a mayor.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
   int sumSize = size2 + size1;
+  int SortArr[sumSize];
+  int x = 0;
   for (int i = 0; i < sumSize; i++) {
+    if(arr1[i] <= arr2[x]){
+      SortArr[i] = arr1[i];
+    }
+    else{
+      SortArr[i] = arr2[x];
+      x++;
+    }
+    
   }
 }
 
