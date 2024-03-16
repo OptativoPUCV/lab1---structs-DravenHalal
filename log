@@ -345,3 +345,14 @@ exercises.c:64:7: error: variable ‘SortArr’ set but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 9eb4ce1
+Sat 16 Mar 2024 12:40:17 AM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:68:8: error: ‘y’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   68 |       y++;
+      |       ~^~
+cc1: all warnings being treated as errors
+Compilation failed
+6f4b1b8
