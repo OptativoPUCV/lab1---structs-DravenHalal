@@ -449,3 +449,13 @@ Sat 16 Mar 2024 01:08:57 AM UTC:
  tests:  0|4
 total_score: 30/70
 97792f8
+Sat 16 Mar 2024 01:15:08 AM UTC: 
+ exercises.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:86:17: error: expected expression before ‘)’ token
+   86 |     if(arr[i] > )
+      |                 ^
+Compilation failed
+5876868

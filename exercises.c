@@ -65,10 +65,12 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
     int sumSize = size1 + size2;
     for (int i = 0; i < sumSize; i++) {
       if(arr1[y] < arr2[x]){
-        result[i] = arr1[y++];
+        result[i] = arr1[y];
+        y++;
       } 
       else {
-        result[i] = arr2[x++];
+        result[i] = arr2[x];
+        x++;
       }
     }
 }
@@ -79,7 +81,10 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size){ 
+int checkSorted(int arr[], int size){
+  for(int i = 0; i < size - 1; i++){
+    if(arr[i] > )
+  }
   if(arr[size] > arr[0]) return 1;
   else return -1; 
 }
