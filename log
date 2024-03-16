@@ -334,3 +334,14 @@ exercises.c:64:7: error: variable ‘SortArr’ set but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 d445b11
+Sat 16 Mar 2024 12:39:43 AM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:64:7: error: variable ‘SortArr’ set but not used [-Werror=unused-but-set-variable]
+   64 |   int SortArr[sumSize];
+      |       ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9eb4ce1

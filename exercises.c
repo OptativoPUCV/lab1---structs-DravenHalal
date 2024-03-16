@@ -62,10 +62,11 @@ en un tercer arreglo también ordenado de menor a mayor.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
   int sumSize = size2 + size1;
   int SortArr[sumSize];
-  int x = 0;
+  int y, x = 0;
   for (int i = 0; i < sumSize; i++) {
-    if(arr1[i] <= arr2[x]){
+    if(arr1[y] <= arr2[x]){
       SortArr[i] = arr1[i];
+      y++;
     }
     else{
       SortArr[i] = arr2[x];
