@@ -487,3 +487,13 @@ exercises.c:89:17: error: expected expression before ‘)’ token
       |                 ^
 Compilation failed
 82b1f43
+Sat 16 Mar 2024 01:26:03 AM UTC: 
+ exercises.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:86:17: error: expected expression before ‘)’ token
+   86 |     if(arr[i] > )
+      |                 ^
+Compilation failed
+53a429d
