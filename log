@@ -845,3 +845,18 @@ test.c:47:6: error: ‘readIntArray’ defined but not used [-Werror=unused-func
 cc1: all warnings being treated as errors
 Compilation failed
 66f1f5a
+Sat 16 Mar 2024 01:51:29 PM UTC: 
+ exercises.c | 17 ++++++++++++-----
+ 1 file changed, 12 insertions(+), 5 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:96:1: error: control reaches end of non-void function [-Werror=return-type]
+   96 | }
+      | ^
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:154:1: error: control reaches end of non-void function [-Werror=return-type]
+  154 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+19e2ded
