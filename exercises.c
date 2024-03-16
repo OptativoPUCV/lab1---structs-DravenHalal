@@ -148,9 +148,14 @@ Nodo *crearListaEnlazada(int arr[], int size) {
 
     if(head == NULL){
       head = lista;
+      actual = lista;
     }
-    else actual->siguiente = lista;
+    else{
+      actual->siguiente = lista;
+      actual = actual->siguiente;
+    }
   }
 
   return head;
+  
 }
