@@ -92,7 +92,7 @@ int checkSorted(int arr[], int size) {
     if (arr[i] < arr[i+1]) {
       descendente = 0;
        break;
-      }
+    }
   }
   if (ascendente) return 1;
   else if (descendente)  return -1;
@@ -138,7 +138,7 @@ Recuerda reservar memoria dinámica para cada nodo usando malloc.
 
 typedef struct nodo {
   int numero;
-  struct nodo *siguiente; // puntero al siguiente nodo
+  struct nodo *sig;
 } Nodo;
 
 Nodo *crearListaEnlazada(int arr[], int size) {
@@ -148,18 +148,16 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     Nodo *lista = (Nodo *)malloc(sizeof(Nodo));
     if (lista == NULL) exit(EXIT_FAILURE);
     lista->numero = arr[i];
-    lista->siguiente = NULL;
+    lista->sig = NULL;
 
     if(head == NULL){
       head = lista;
       actual = lista;
     }
     else{
-      actual->siguiente = lista;
-      actual = actual->siguiente;
+      actual->sig = lista;
+      actual = actual->sig;
     }
   }
-
   return head;
-  
 }

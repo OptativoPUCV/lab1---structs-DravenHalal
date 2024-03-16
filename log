@@ -920,3 +920,25 @@ Sat 16 Mar 2024 02:30:49 PM UTC:
  tests:  0|0
 total_score: 70/70
 168b531
+Sat 16 Mar 2024 02:31:35 PM UTC: 
+ exercises.c | 10 ++++------
+ 1 file changed, 4 insertions(+), 6 deletions(-)
+test.c: In function ‘print_linked_list’:
+test.c:41:18: error: ‘Nodo’ {aka ‘struct nodo’} has no member named ‘siguiente’
+   41 |     lista = lista->siguiente;
+      |                  ^~
+test.c: In function ‘test_crearListaEnlazada’:
+test.c:344:24: error: ‘Nodo’ {aka ‘struct nodo’} has no member named ‘siguiente’
+  344 |           lista = lista->siguiente;
+      |                        ^~
+test.c:349:24: error: ‘Nodo’ {aka ‘struct nodo’} has no member named ‘siguiente’
+  349 |       current = current->siguiente;
+      |                        ^~
+test.c:361:22: error: ‘Nodo’ {aka ‘struct nodo’} has no member named ‘siguiente’
+  361 |         lista = lista->siguiente;
+      |                      ^~
+test.c:370:20: error: ‘Nodo’ {aka ‘struct nodo’} has no member named ‘siguiente’
+  370 |       lista = lista->siguiente;
+      |                    ^~
+Compilation failed
+c7c1de4
