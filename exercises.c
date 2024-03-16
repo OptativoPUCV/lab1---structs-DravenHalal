@@ -79,25 +79,33 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
 int checkSorted(int arr[], int size) {
+    int ascending = 1; // Variable para indicar si el arreglo está ordenado de manera ascendente
+    int descending = 1; // Variable para indicar si el arreglo está ordenado de manera descendente
+
+    // Verificar si el arreglo está ordenado de manera ascendente
     for (int i = 0; i < size - 1; i++) {
         if (arr[i] > arr[i + 1]) {
-            for (int x = 0; x < size - 1; x++) {
-                if (arr[x] < arr[x + 1])
-                    return 0;
-                else
-                    return -1;
-            }
-        } else if (arr[i] < arr[i + 1]) {
-            for (int x = 0; x < size - 1; x++) {
-                if (arr[x] > arr[x + 1])
-                    return 0;
-                else
-                    return 1;
-            }
+            ascending = 0;
+            break; // No es necesario seguir verificando si encontramos un elemento fuera de orden
         }
     }
-    return 1; // Si llega aquí, significa que el arreglo está ordenado de manera ascendente
+
+    // Verificar si el arreglo está ordenado de manera descendente
+    for (int i = 0; i < size - 1; i++) {
+        if (arr[i] < arr[i + 1]) {
+            descending = 0;
+            break; // No es necesario seguir verificando si encontramos un elemento fuera de orden
+        }
+    }
+
+    if (ascending)
+        return 1; // El arreglo está ordenado de manera ascendente
+    else if (descending)
+        return -1; // El arreglo está ordenado de manera descendente
+    else
+        return 0; // El arreglo no está ordenado
 }
+
 /*
 Ejercicio 6: Información de una Biblioteca
 Descripción: Vamos a representar la información de una biblioteca. En la
