@@ -102,7 +102,6 @@ biblioteca, hay libros, y cada libro tiene un autor. Queremos organizar esta
 información utilizando estructuras anidadas en C. Escribe la función para
 inicializar la información de un libro.
 */
-
 typedef struct {
   char nombre[50];
   int anioNacimiento;
@@ -114,11 +113,12 @@ typedef struct {
   int anioPublicacion;
 } Libro;
 
-void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) {
+void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
+                      int anioNacimiento, int anioPublicacion) {
+
   strcpy(libro->titulo, titulo);
   strcpy(libro->autor.nombre, nombreAutor);
-  libro->autor.anioNacimiento = anioNacimiento;  
-  libro->anioPublicacion = anioPublicacion;
+  libro->autor.anioNacimiento = anioNacimiento;
 }
 
 /*
