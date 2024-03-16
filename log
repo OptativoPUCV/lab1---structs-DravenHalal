@@ -672,3 +672,21 @@ exercises.c:96:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 f238a2e
+Sat 16 Mar 2024 05:22:17 AM UTC: 
+ exercises.c | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:141:9: error: unused variable ‘ultimo’ [-Werror=unused-variable]
+  141 |   Nodo *ultimo = NULL;
+      |         ^~~~~~
+exercises.c:140:9: error: unused variable ‘lista’ [-Werror=unused-variable]
+  140 |   Nodo *lista = NULL;
+      |         ^~~~~
+exercises.c: In function ‘checkSorted’:
+exercises.c:96:1: error: control reaches end of non-void function [-Werror=return-type]
+   96 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+75dd830
