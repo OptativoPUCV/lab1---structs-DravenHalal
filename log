@@ -942,3 +942,9 @@ test.c:370:20: error: ‘Nodo’ {aka ‘struct nodo’} has no member named ‘
       |                    ^~
 Compilation failed
 c7c1de4
+Sat 16 Mar 2024 02:32:02 PM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ tests:  0|0
+total_score: 70/70
+8af3a03
