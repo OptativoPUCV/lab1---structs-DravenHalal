@@ -78,26 +78,21 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) {
-    int ascending = 1;
-    int descending = 1;
-
-    for (int i = 0; i < size - 1; i++) {
-        if (arr[i] > arr[i + 1]) {
-            ascending = 0; // Si encuentra un elemento que no está en orden ascendente, marca el indicador como falso
-        }
-        if (arr[i] < arr[i + 1]) {
-            descending = 0; // Si encuentra un elemento que no está en orden descendente, marca el indicador como falso
-        }
+int checkSorted(int arr[], int size){
+  for(int i = 0; i < size - 1; i++){
+    if(arr[i] > arr[i+1]){
+      for(int x = 0; x < size - 1; x++){
+        if(arr[x] < arr[x + 1]) return 0;
+        else return -1;
+      }
     }
-
-    if (ascending) {
-        return 1; // Arreglo ordenado en forma ascendente
-    } else if (descending) {
-        return -1; // Arreglo ordenado en forma descendente
-    } else {
-        return 0; // Arreglo no ordenado
+    else if(arr[i] < arr[i+1]){
+      for(int x = 0; x < size - 1; x++){
+        if(arr[x] > arr[x + 1]) return 0;
+        else return 1;
+      }
     }
+  }
 }
 
 /*
@@ -119,8 +114,12 @@ typedef struct {
   int anioPublicacion;
 } Libro;
 
-void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) {
+  strcpy(libro->titulo, titulo);
+  strcpy(libro->autor.nombre, nombreAutor);
+  libro->autor.anioNacimiento = anioNacimiento;  
+  libro->anioPublicacion = anioPublicacion;
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
