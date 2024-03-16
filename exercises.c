@@ -81,18 +81,23 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 int checkSorted(int arr[], int size){
   for(int i = 0; i < size - 1; i++){
     if(arr[i] > arr[i+1]){
-      for(int x = 0; x < size - 1; x++){
-        if(arr[x] < arr[x + 1]) return 0;
-        else return -1;
+      for(int x = i; x < size - 1; x++){  // Corrección: Comienza desde i en lugar de 0
+        if(arr[x] < arr[x + 1]) 
+          return 0;  // Corrección: Si encuentra un elemento fuera de orden, devuelve 0
+        else 
+          return -1;
       }
     }
     else if(arr[i] < arr[i+1]){
-      for(int x = 0; x < size - 1; x++){
-        if(arr[x] > arr[x + 1]) return 0;
-        else return 1;
+      for(int x = i; x < size - 1; x++){  // Corrección: Comienza desde i en lugar de 0
+        if(arr[x] > arr[x + 1]) 
+          return 0;  // Corrección: Si encuentra un elemento fuera de orden, devuelve 0
+        else 
+          return 1;
       }
     }
   }
+  return 1;  // Corrección: Si no se cumplen las condiciones anteriores, devuelve 1
 }
 
 /*
