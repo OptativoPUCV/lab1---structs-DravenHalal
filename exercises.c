@@ -115,7 +115,6 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) {
-  scanf(titulo, "%s", libro->titulo);
   strcpy(libro->titulo, titulo);
   strcpy(libro->autor.nombre, nombreAutor);
   libro->autor.anioNacimiento = anioNacimiento;  
